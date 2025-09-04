@@ -20,7 +20,7 @@
 ## 2. Design - Mockup Link & Tailwind Mapping
 
 ### Design Mockup:
-🎨 **Figma Link:** [AI Interface Mockup](https://figma.com/ai-interface-prototype)
+ **Figma Link:** [AI Interface Mockup](https://figma.com/ai-interface-prototype)
 
 ### Tailwind Token Mapping:
 | Design Token | Tailwind Class | Value |
