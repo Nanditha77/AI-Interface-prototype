@@ -56,4 +56,3 @@ export const PROMPT_TEMPLATES = [
   { id: 'creative-writing', name: 'Creative Writing', prompt: 'Write a story about:' }
 ];
 ```
-**Just JavaScript functions that fake responses with delays.**
