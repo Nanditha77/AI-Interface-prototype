@@ -1,66 +1,49 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# AI Interface Prototype
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+## 1. Research - Platforms Reviewed & Chosen Features
 
-# testing
-/coverage
+### Platforms Surveyed:
+- **ChatGPT** - Clean chat interface, model selector
+- **Claude** - Advanced settings panel, parameter controls  
+- **Hugging Face** - Interactive sliders, real-time feedback
+- **Perplexity** - Modern design, quick templates
+- **Copilot** - Dark mode, accessibility features
 
-# production
-/build
+### Chosen Features:
+- **Model Selector** (from ChatGPT) - Dropdown with descriptions
+- **Parameter Controls** (from Claude) - Temperature, tokens, sliders
+- **Template System** (from Perplexity) - Quick prompt templates
+- **Dark Mode Toggle** (from Copilot) - Theme switching
+- **Chat Interface** (from ChatGPT) - Message bubbles, copy functionality
+- **Settings Panel** (from Claude) - Collapsible sidebar design
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+## 2. Design - Mockup Link & Tailwind Mapping
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+### Design Mockup:
+ **Figma Link:** [AI Interface Mockup](https://www.figma.com/design/HO8Y9Yvs6Xhq55flawU3v9/AI-Interface?node-id=0-1&p=f&t=x6xnlcbHcZTCQ7yH-0)
 
-# Editor directories and files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+### Tailwind Token Mapping:
+| Design Token | Tailwind Class | Value |
+|--------------|----------------|-------|
+| Primary Blue | `bg-blue-500` | #3B82F6 |
+| Secondary Purple | `bg-purple-500` | #8B5CF6 |
+| Text Primary | `text-gray-900` | #111827 |
+| Border Radius | `rounded-xl` | 12px |
+| Spacing Unit | `p-4` | 16px |
+| Shadow | `shadow-lg` | 0 10px 15px rgba(0,0,0,0.1) |
 
-# OS generated files
-Thumbs.db
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
+## 3. Development - Implementation Notes & Known Limitations
 
-# Logs
-logs
-*.log
+### Implementation Notes:
+- Built with **React 18** + **Tailwind CSS**
+- Uses **custom hooks** for state management
+- **Local storage** for settings persistence
+- **Mock API** for demonstration purposes
+- **Responsive design** with mobile-first approach
 
-# Runtime data
-pids
-*.pid
-*.seed
-
-# Coverage directory used by tools like istanbul
-lib-cov
-
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
-
-# Dependency directory
-node_modules
-
-# Optional npm cache directory
-.npm
-
-# Optional REPL history
-.node_repl_history
+### Known Limitations:
+- **Mock responses only** - not connected to real AI APIs
+- **No user authentication** - single session only
+- **Browser storage only** - no cloud sync
+- **Limited file upload** - text input only
+- **No conversation history** - data not persisted between sessions
